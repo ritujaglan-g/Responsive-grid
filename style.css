@@ -1,0 +1,18 @@
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(13, 0, 255);
+  padding: 20px;
+}
+.grid-item {
+  text-align: center;
+  font-size: 40px;
+  background-color: gray;
+  padding: 20px;
+  border: 2px solid black;
+}
+@media screen and (max-width: 600px) {
+  #grid-container {
+    grid-template-columns: auto;
+  }
+}
